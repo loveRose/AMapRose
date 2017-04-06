@@ -27,7 +27,7 @@ import com.amap.api.location.AMapLocationClientOption;
  ************************************************************************
  *
  * 项目名称：AMapRose
- * 类描述： 
+ * 类描述： 定位参数设置组装类
  * 创建人：lvyerose
  * 邮箱：lvyerose@163.com
  * 创建时间：17/4/6
