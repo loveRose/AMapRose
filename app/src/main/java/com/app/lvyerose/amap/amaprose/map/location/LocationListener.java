@@ -40,10 +40,11 @@ public interface LocationListener {
     void onLocationType(int locationType);//获取当前定位结果来源，如网络定位结果，详见定位类型表
 
     void onLocationDetail(String locationDetail);//定位描叙信息
-
-    void onLatitude(double lat);//获取纬度
-
-    void onLongitude(double lon);//获取经度
+//
+//    void onLatitude(double lat);//获取纬度
+//
+//    void onLongitude(double lon);//获取经度
+    void onLatLng(double lat,double lng);//获取经纬度
 
     void onAccuracy(float acc);//获取精度信息
 

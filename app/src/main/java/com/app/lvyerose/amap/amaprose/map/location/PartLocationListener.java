@@ -51,12 +51,7 @@ public class PartLocationListener implements LocationListener {
     }
 
     @Override
-    public void onLatitude(double lat) {
-
-    }
-
-    @Override
-    public void onLongitude(double lon) {
+    public void onLatLng(double lat, double lng) {
 
     }
 
@@ -149,4 +144,5 @@ public class PartLocationListener implements LocationListener {
     public void onLocationTime(String time) {
 
     }
+
 }
