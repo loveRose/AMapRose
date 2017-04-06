@@ -34,7 +34,7 @@ package com.app.lvyerose.amap.amaprose.map.location;
  *
  *  ......
  */
-public class PartLocationLisenter implements LocationListener {
+public class PartLocationListener implements LocationListener {
     @Override
     public void onError(int errorCode, String errorInfo) {
 

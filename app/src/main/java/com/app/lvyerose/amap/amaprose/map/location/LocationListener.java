@@ -23,7 +23,7 @@ package com.app.lvyerose.amap.amaprose.map.location;
  ************************************************************************
  *
  * 项目名称：AMapRose
- * 类描述： 
+ * 类描述：  外部监听回调总体接口 包含回调所有功能
  * 创建人：lvyerose
  * 邮箱：lvyerose@163.com
  * 创建时间：17/4/6
