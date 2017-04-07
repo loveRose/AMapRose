@@ -44,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
             public void onLatLng(double lat, double lng) {
                 super.onLatLng(lat, lng);
             }
+
+            @Override
+            public void onLatitude(double lat) {
+                super.onLatitude(lat);
+            }
+
+            @Override
+            public void onLongitude(double lon) {
+                super.onLongitude(lon);
+            }
         });
         locationUtils.start();
     }

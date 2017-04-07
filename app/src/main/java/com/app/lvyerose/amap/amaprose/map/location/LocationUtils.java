@@ -64,6 +64,8 @@ public class LocationUtils {
                         //返回定位类型
                         externalLocationListener.onLocationType(aMapLocation.getLocationType());
                         externalLocationListener.onLocationDetail(aMapLocation.getLocationDetail());
+                        externalLocationListener.onLatitude(aMapLocation.getLatitude());
+                        externalLocationListener.onLongitude(aMapLocation.getLongitude());
                         externalLocationListener.onLatLng(aMapLocation.getLatitude(),aMapLocation.getLongitude());
                         externalLocationListener.onAccuracy(aMapLocation.getAccuracy());
                         externalLocationListener.onAddress(aMapLocation.getAddress());
