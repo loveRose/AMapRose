@@ -1,8 +1,8 @@
 package com.app.lvyerose.amap.amaprose;
 
+import android.app.Activity;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -21,7 +21,7 @@ import com.app.lvyerose.amap.amaprose.map.location.LocationBuilder;
 import com.app.lvyerose.amap.amaprose.map.location.LocationUtils;
 import com.app.lvyerose.amap.amaprose.map.location.PartLocationListener;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     TextView locationShowTv;
 
     LocationUtils locationUtils; //地图定位工具
@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
     //小汽车2的坐标位置
     double car2Lat = 39.966141;
     double car2Lng = 116.308998;
+
+    //当前定位所得位置坐标
+    double locationLat;
+    double locationLng;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onLatLng(double lat, double lng) {
                 super.onLatLng(lat, lng);
+                locationLat = lat;
+                locationLng = lng;
             }
         });
         locationUtils.start();
@@ -145,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 navigationLng = car2Lng;
                 break;
         }
-        NavigationActivity.startNavigationActivity(MainActivity.this, navigationLat, navigationLng);
+        NavigationActivity.startNavigationActivity(MainActivity.this, locationLat, locationLng, navigationLat, navigationLng);
     }
 
 
