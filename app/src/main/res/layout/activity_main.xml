@@ -10,13 +10,17 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/car_1_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="carOnClick"
             android:text="car1" />
 
         <Button
+            android:id="@+id/car_2_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="carOnClick"
             android:text="car2" />
 
         <TextView
